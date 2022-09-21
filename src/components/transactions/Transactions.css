@@ -1,0 +1,85 @@
+.transactions {
+  box-shadow: var(--shadow-primary);
+  padding: var(--padding-main);
+  border-radius: var(--border-radius-main);
+}
+
+.transactions__title {
+  padding-bottom: 2rem;
+}
+
+.transactions__table {
+  table-layout: fixed;
+  width: 100%;
+  box-shadow: var(--shadow-secondary);
+  border-collapse: collapse;
+}
+
+.transactions__table thead th:nth-child(1) {
+  width: 10%;
+}
+
+.transactions__table thead th:nth-child(2) {
+  width: 20%;
+}
+
+.transactions__table thead th:nth-child(3) {
+  width: 20%;
+}
+
+.transactions__table thead th:nth-child(4) {
+  width: 10%;
+}
+
+.transactions__table thead th:nth-child(5) {
+  width: 10%;
+}
+
+.transactions__table thead th:nth-child(6) {
+  width: 20%;
+}
+
+.transactions__table thead th:nth-child(7) {
+  width: 20%;
+}
+
+.transactions__table tbody tr, .transactions__table thead th {
+  border-bottom: 1px solid var(--color-gray-secondary);
+}
+
+.transactions__table td {
+  text-align: center;
+}
+
+.transactions__table td, .transactions__table th {
+  padding: 1rem;
+}
+
+.transactions__product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transactions__img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.transactions__status {
+  padding: 0.5rem;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
+.transactions__status--approved {
+  color: var(--color-green-primary);
+  background-color: var(--color-green-secondary);
+}
+
+.transactions__status--pending {
+  color: var(--color-yellow-primary);
+  background-color: var(--color-yellow-secondary);
+}

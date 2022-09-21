@@ -1,0 +1,47 @@
+.widget {
+  display: flex;
+  justify-content: space-between;
+  height: 12rem;
+  box-shadow: var(--shadow-primary);
+  border-radius: var(--border-radius-main);
+  padding: var(--padding-main);
+}
+
+.widget__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.widget__title {
+  text-transform: uppercase;
+}
+
+.widget__quantity {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #000;
+}
+
+.widget__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.percent__container {
+  display: flex;
+  align-items: center;
+}
+
+.widget__icon--arrow-up, .percentage__positive {
+  color: green;
+}
+
+.widget__icon--arrow-down, .percentage__negative {
+  color: var(--color-red);
+}
+
+.widget__icon {
+  align-self: flex-end;
+}

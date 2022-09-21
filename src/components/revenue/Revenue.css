@@ -1,0 +1,42 @@
+.revenue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow-primary);
+  border-radius: var(--border-radius-main);
+  padding: var(--padding-main);
+  height: 40rem;
+}
+
+.revenue__title {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+.revenue__text {
+  text-align: center;
+}
+
+.revenue__number {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #000;
+}
+
+.revenue__container {
+  margin-top: auto;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+.revenue__number-container {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

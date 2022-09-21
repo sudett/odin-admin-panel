@@ -1,0 +1,5 @@
+.chart {
+  box-shadow: var(--shadow-primary);
+  border-radius: var(--border-radius-main);
+  padding: var(--padding-main);
+}
