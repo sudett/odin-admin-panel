@@ -1,0 +1,31 @@
+.new-user {
+  box-shadow: var(--shadow-primary);
+  padding: var(--padding-main);
+  border-radius: var(--border-radius-main);
+}
+
+.new-user__title {
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+}
+
+.new-user__form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.new-user__img-preview {
+  justify-self: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.new-user__middle-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

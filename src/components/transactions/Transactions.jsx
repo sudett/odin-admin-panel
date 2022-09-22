@@ -86,7 +86,7 @@ const Transactions = () => {
             <td>{date}</td>
             <td>{amount}</td>
             <td>{paymentMethod}</td>
-            <td><span className={`${status === 'approved' ? 'transactions__status--approved' : 'transactions__status--pending'} transactions__status`}>{status}</span></td>
+            <td><span className={`${status === 'approved' ? 'transactions__status--approved' : 'transactions__status--pending'} general__status`}>{status}</span></td>
           </tr>))}
         </tbody>
       </table>

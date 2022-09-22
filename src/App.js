@@ -1,12 +1,14 @@
 import React from 'react';
-import './App.css';
+import {Routes, Route} from 'react-router-dom';
 
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
-import WidgetContainer from './components/widget-container/WidgetContainer';
-import Revenue from './components/revenue/Revenue';
-import Chart from './components/chart/Chart';
-import Transactions from './components/transactions/Transactions';
+import Home from './pages/home/Home';
+import Users from './pages/users/Users';
+import SingleUser from './pages/single-user/SingleUser';
+import NewUser from './pages/new-user/NewUser';
+
+import './App.css';
 
 const App = () => {
   return (
@@ -14,14 +16,14 @@ const App = () => {
       <Sidebar/>
       <div className='main-container'>
         <Header/>
-        <main className='main'>
-          <WidgetContainer/>
-          <div className='main-middle'>
-            <Revenue/>
-            <Chart/>
-          </div>
-          <Transactions/>
-        </main>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/users'>
+            <Route index element={<Users/>}/>
+            <Route path=':userId' element={<SingleUser/>}/>
+            <Route path='new' element={<NewUser/>}/>
+          </Route>
+        </Routes>
       </div>
     </div>
   )

@@ -1,0 +1,39 @@
+.user {
+  box-shadow: var(--shadow-primary);
+  border-radius: var(--border-radius-main);
+  padding: var(--padding-main);
+}
+
+.user__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn--edit {
+  background-color: var(--color-gray-secondary);
+  padding: 0.5rem;
+}
+
+.user__info {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.user__img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user__list-info {
+  padding-top: 2rem;
+}
+
+.user__list-info li {
+  padding-bottom: 1.2rem;
+}
+

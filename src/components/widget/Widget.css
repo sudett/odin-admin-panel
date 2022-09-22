@@ -35,11 +35,11 @@
 }
 
 .widget__icon--arrow-up, .percentage__positive {
-  color: green;
+  color: var(--color-green-primary);
 }
 
 .widget__icon--arrow-down, .percentage__negative {
-  color: var(--color-red);
+  color: var(--color-red-primary);
 }
 
 .widget__icon {

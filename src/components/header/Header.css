@@ -38,14 +38,14 @@
 .header__info-container {
   position: relative;
   display: flex;
-  align-items: centers;
+  align-items: center;
 }
 
 .header__number {
   position: absolute;
   top: -0.5rem;
   left: 1rem;
-  background-color: var(--color-red);
+  background-color: var(--color-red-primary);
   color: #fff;
   font-size: 0.9rem;
   border-radius: 50%;

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import {MdDashboard, MdOutlineProductionQuantityLimits, MdNotifications, MdOutlineLogout} from 'react-icons/md';
 import {AiOutlineUser, AiFillCreditCard} from 'react-icons/ai';
@@ -15,70 +16,70 @@ const Sidebar = () => {
       <div className='side__container'>
         <div className='side__info-container'>
           <h4 className='side__header'>Main</h4>
-          <div className='side__group'>
+          <Link to="/" className='side__group'>
             <MdDashboard className='icon side__icon'/>
             <span>Dashboard</span>
-          </div>
+          </Link>
         </div>
 
         <div className='side__info-container'>
           <h4 className='side__header'>Lists</h4>
-          <div className='side__group'>
+          <Link to="/users" className='side__group'>
             <AiOutlineUser className='icon side__icon'/>
             <span>Users</span>
-          </div>
-          <div className='side__group'>
+          </Link>
+          <Link to="/" className='side__group'>
             <MdOutlineProductionQuantityLimits className='icon side__icon'/>
             <span>Products</span>
-          </div>
-          <div className='side__group'>
+          </Link>
+          <Link to="/" className='side__group'>
             <AiFillCreditCard className='icon side__icon'/>
             <span>Orders</span>
-          </div>
-          <div className='side__group'>
+          </Link>
+          <Link to="/" className='side__group'>
             <GrDeliver className='icon side__icon'/>
             <span>Delivery</span>
-          </div>
+          </Link>
         </div>
 
         <div className='side__info-container'>
           <h4 className='side__header'>Useful</h4>
-          <div className='side__group'>
+          <Link to="/" className='side__group'>
             <IoMdStats className='icon side__icon'/>
             <span>Stats</span>
-          </div>
-          <div className='side__group'>
+          </Link>
+          <Link to="/" className='side__group'>
             <MdNotifications className='icon side__icon'/>
             <span>Notifications</span>
-          </div>
+          </Link>
         </div>
 
         <div className='side__info-container'>
           <h4 className='side__header'>Service</h4>
-          <div className='side__group'>
+          <Link to="/" className='side__group'>
             <MdDashboard className='icon side__icon'/>
             <span>System Health</span>
-          </div>
-          <div className='side__group'>
+          </Link>
+          <Link to="/" className='side__group'>
             <MdDashboard className='icon side__icon'/>
             <span>Logs</span>
-          </div>
-          <div className='side__group'>
+          </Link>
+          <Link to="/" className='side__group'>
             <MdDashboard className='icon side__icon'/>
             <span>Settings</span>
-          </div>
+          </Link>
         </div>
 
         <div className='side__info-container'>
           <h4 className='side__header'>User</h4>
-          <div className='side__group'>
+          <Link to="/" className='side__group'>
             <MdOutlineLogout className='icon side__icon'/>
             <span>Profile</span>
-          </div>
-          <div className='side__group'>
+          </Link>
+          <Link to="/" className='side__group'>
             <MdOutlineLogout className='icon side__icon'/>
             <span>Logout</span>
-          </div>
+          </Link>
         </div>
 
         <div className='side__info-container'>

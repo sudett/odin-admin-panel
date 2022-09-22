@@ -1,0 +1,103 @@
+.users__title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.btn--add {
+  color: var(--color-green-primary);
+  border: 1px solid var(--color-green-primary);
+  padding: 0.5rem 1rem;
+}
+
+.users__table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--color-gray-secondary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.users__table th:nth-child(1) {
+  width: 5%;
+}
+
+.users__table th:nth-child(2) {
+  width: 5%;
+}
+
+.users__table th:nth-child(3) {
+  width: 25%;
+}
+
+.users__table th:nth-child(4) {
+  width: 20%;
+}
+
+.users__table th:nth-child(5) {
+  width: 10%;
+}
+
+.users__table th:nth-child(6) {
+  width: 15%;
+}
+
+.users__table th:nth-child(7) {
+  width: 20%;
+}
+
+.users__table td, .users__table th {
+  padding: 1rem;
+}
+
+.users__table td {
+  text-align: center;
+}
+
+.users__table tr {
+  border-bottom: 1px solid var(--color-gray-secondary);
+}
+
+.users__img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.users__img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.users__status--active {
+  background-color: var(--color-green-secondary);
+  color: var(--color-green-primary);
+}
+
+.users__status--pending {
+  background-color: var(--color-yellow-secondary);
+  color: var(--color-yellow-primary);
+}
+
+.users__status--passive {
+  background-color: var(--color-red-secondary);
+  color: var(--color-red-primary);
+}
+
+.btn--view {
+  border: 1px solid var(--color-yellow-secondary);
+  color: var(--color-yellow-primary);
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.btn--delete {
+  border: 1px solid var(--color-red-secondary);
+  color: var(--color-red-primary);
+  padding: 0.5rem;
+}

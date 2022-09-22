@@ -1,4 +1,5 @@
 .chart {
+  grid-column: 2 / -1;
   box-shadow: var(--shadow-primary);
   border-radius: var(--border-radius-main);
   padding: var(--padding-main);
